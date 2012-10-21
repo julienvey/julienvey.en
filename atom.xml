@@ -4,24 +4,26 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jawher's Blog</title>
- <link href="http://jawher.org/atom.xml" rel="self"/>
- <link href="http://jawher.org/"/>
+ <title>Blog de Julien Vey</title>
+ <link href="http://www.julienvey.com/atom.xml" rel="self"/>
+ <link href="http://www.julienvey.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://jawher.org/</id>
+ <id>http://www.julienvey.com/</id>
  <author>
-   <name>Jawher Moussa</name>
-   <email>firstName DOT lastName AT gmail.com</email>
+   <name>Julien Vey</name>
+   <email>vey DOT julien AT gmail.com</email>
  </author>
 
  {% for post in site.posts %}
+ {% unless post.draft %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://jawher.org{{ post.url }}"/>
+   <link href="http://www.julienvey.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://jawher.org{{ post.id }}</id>
+   <id>http://www.julienvey.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
+ {% endunless %}
  {% endfor %}
  
 </feed>

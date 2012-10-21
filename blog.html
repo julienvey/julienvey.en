@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog - Julien Vey
+---
+<p class="lead">Les articles publiés</p>
+
+<ul class="posts">
+    {% for post in site.posts %}
+	    {% unless post.draft %}
+	    <li>
+	        <span>{{ post.date | date_to_string }}</span> &raquo;
+	        <a href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
+	    {% endunless %}
+    {% endfor %}
+</ul>
+
+<br />
+<br />
+
+<a class="lead" href="http://www.julienvey.info">Ancien Blog</a>
