@@ -32,3 +32,12 @@
   display: inline;
   margin-right: 10px;
 }
+
+.dl-horizontal dt {
+  white-space: normal !important;
+  width: 240px !important;
+}
+
+.dl-horizontal dd {
+  margin-left: 260px;
+}
