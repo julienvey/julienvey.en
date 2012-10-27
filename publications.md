@@ -18,7 +18,7 @@ title: Publications - Julien Vey
 	</li>
 	<li>
 		<span>04 Oct 2011</span> &raquo;
-		<a href="http://blog.zenika.com/index.php?post/2011/09/27/Google-Gin">Google Gin (également sur <a href="http://zenika.developpez.com/articles/java/frameworks/googlegin/">developpez.com</a>)</a>
+		<a href="http://blog.zenika.com/index.php?post/2011/09/27/Google-Gin">Google Gin</a> (également sur <a href="http://zenika.developpez.com/articles/java/frameworks/googlegin/">developpez.com</a>)
 	</li>
 	<li>
 		<span>10 Mar 2011</span> &raquo;
