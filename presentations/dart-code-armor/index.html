@@ -1,0 +1,915 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code d'Armor</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+  <slides class="layout-widescreen">
+
+    <slide class="title-slide segue nobackground">
+      <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+      <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+      <hgroup class="auto-fadein">
+        <h1 data-config-title><!-- populated from slide_config.json --></h1>
+        <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+        <p data-config-presenter><!-- populated from slide_config.json --></p>
+      </hgroup>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Qui suis-je ?</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Julien Vey</li>
+          <ul>
+            <li>Consultant et Formateur à <span style="color: #B50000">Zenika</span> Paris
+            </li>	
+            <li>Développeur Java, GWT... Dart</li>
+          </ul>
+          <br >
+          <li>Zenika</li>
+          <ul>
+            <li>Java, Open Source, Agilité</li>
+            <li>Paris, Rennes, Nantes, Lyon</li>
+            <li><a href="http://www.zenika.com">www.zenika.com</a></li>
+            <li><a href="http://blog.zenika.com">blog.zenika.com</a></li>
+          </ul>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>De nos jours, côté serveur...</h2>
+      </hgroup>
+      <article>
+
+      </article>
+    </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/progLanguages.jpeg)">
+      <footer class="source">www.flickr.com/photos/25797459@N06/5438799763/</footer>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>De nos jours, côté navigateur...</h2>
+      </hgroup>
+      <article>
+
+      </article>
+    </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/whysoalone.png)">
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Pourquoi Dart ?</h2>
+      </hgroup>
+      <article>
+        <br>
+        <ul>
+          <li>Proposer une alternative à JavaScript</li>
+          <br>
+          <li>Faciliter le développement de larges applications web</li>
+          <br>
+          <li>Parce que Google</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Pourquoi Dart ?</h2>
+        <h3>Parce que le développement web c'est bien...</h3>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Aucune installation</li>
+          <br>
+          <li>Multi-Devices</li>
+          <ul>
+            <li>Desktop</li>
+            <li>Tablette</li>
+            <li>Smartphone</li>
+          </ul>
+          <br>
+          <li>Itératif et rapide</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Pourquoi Dart ?</h2>
+        <h3>Parce que le développement web c'est bien... Mais c'est aussi</h3>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Manque de structure</li>
+          <br>
+          <li>Outillage très limité</li>
+          <br>
+          <li>Les concepts de librairies, packages et modules ne sont pas inhérents au langage.</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Quelques mots sur JavaScript</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li>JavaScript a beaucoup d'avantages mais a aussi ses défauts</li>
+          <br>
+          <li>Beaucoup de conversions de type implicites</li>
+          <br>
+          <li>Pas de vérification de type sur les arguments</li>
+          <br>
+          <li>Pas de bornes sur les tableaux</li>
+          <br>
+          <li><a href="http://wtfjs.com">wtfjs.com</a></li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Quelques mots sur JavaScript</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Les VMs JavaScript sont très performantes</li>
+          <br>
+          <li>On atteint la limite des optimisations possibles</li>
+          <br>
+          <li>C'est pourquoi...</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <article class="flexbox vcenter">
+        <img src="images/dart.png" alt="Description" title="Description">
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Dart, Kesako ?</h2>
+        <h3>Dart, c'est...</h3>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Un langage de programmation, actuellement en version M1</li>
+          <br>
+          <li>Un IDE, Dart Editor, basé sur Eclipse</li>
+          <br>
+          <li>Une VM standalone</li>
+          <br>
+          <li>Une VM embarqué dans Chromium (surnommée Dartium)</li>
+          <br>
+          <li>Un ensemble de librairies (html, json, isolate...)</li>
+          <br>
+          <li>Un framework web, Dart Web Components</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Objectifs & Contraintes</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Objectifs</li>
+          <br>
+          <ul>
+            <li>Fournir un riche ensemble de fonctionnalités</li>
+            <li>Performant</li>
+            <li>Facile à développer</li>
+          </ul>
+          <br>
+          <li>Contraintes</li>
+          <br>
+          <ul>
+            <li>Doit être vu comme un langage familier pour la majorité des développeurs</li>
+            <li>Doit compiler efficacement en JavaScript</li>
+          </ul>
+          
+          
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Le langage en quelques mots</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Orienté objet</li>
+          <li>À base de classes</li>
+          <li>Héritage simple</li>
+          <li>Typage optionnel</li>
+          <li>Reflexion basée sur des "Mirrors"</li>
+          <li>Mécanisme de concurrence basé sur les acteurs</li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Il était une fois...</h2>
+        <h3>un <span style="font-style: italic;">main</span></h3>
+      </hgroup>
+      <article>
+        <pre class="prettyprint" data-lang="dart">
+// Point d'entrée d'une application Dart
+main() {
+  var group = "Code d'Armor";   // Déclaration et initialisation d'une variable
+  sayHello(group);             // Appel de fonction
+}
+
+// On définit une fonction
+sayHello(String group) {
+  print("Hello $group");        // Affichage dans la console
+}
+    </pre>
+  </article>
+</slide>
+
+
+    <slide>
+      <hgroup>
+        <h2>Les classes</h2>
+      </hgroup>
+      <article>
+        <pre class="prettyprint" data-lang="dart">
+class Coordonnees {
+  num latitude, longitude; // getter et setter implicites
+}</pre>
+       <pre class="prettyprint" data-lang="dart">
+main() {
+  var lannion = new Coordonnees();
+  lannion.latitude = 48;              // Utilisation du setter implicite
+
+  assert(lannion.latitude == 48 );    // Utilisation du getter implicite
+  assert(lannion.longitude == null);  // Les attributs ont pour valeur null par défaut
+}</pre>
+  </article>
+</slide>
+
+    <slide>
+      <hgroup>
+        <h2>Les constructeurs</h2>
+      </hgroup>
+      <article>
+        <pre class="prettyprint" data-lang="dart">
+class Coordonnees {
+  num latitude, longitude;
+
+  Coordonnees(num latitude, num longitude) {
+    this.latitude = latitude;
+    this.longitude = longitude;
+  }
+}</pre>
+<p>Hum... un peu de sucre syntaxique ?</p>
+       <pre class="prettyprint" data-lang="dart">
+class Coordonnees {
+  num latitude, longitude;
+
+  Coordonnees(this.latitude, this.longitude);
+}</pre>
+  </article>
+</slide>
+
+    <slide>
+      <hgroup>
+        <h2>Les constructeurs nommés</h2>
+      </hgroup>
+      <article>
+        <pre class="prettyprint" data-lang="dart">
+class Coordonnees {
+  num latitude, longitude;
+
+  Coordonnees.equateur(num longitude) {
+    this.latitude = 0;
+    this.longitude = longitude;
+  }
+}</pre>
+        <pre class="prettyprint" data-lang="dart">
+main(){
+  var coord = new Coordonnees.equateur(12);
+}</pre>
+<br>
+<p>Possibilité d'avoir deux constructeurs avec la même signature, mais deux noms différents</p>
+  </article>
+</slide>
+
+
+<slide>
+      <hgroup>
+        <h2>Héritage</h2>
+      </hgroup>
+      <article>
+        <pre class="prettyprint" data-lang="dart">
+class Personne {
+  String prenom;
+  Personne.fromPrenom(this.prenom);
+}
+
+class Developpeur extends Personne {
+  Developpeur.fromPrenom(String prenom) : super.fromPrenom(prenom);
+  // L'appel à super est obligatoire car Personne n'a pas de constructeur par défaut
+}
+
+main() {
+  var julien = new Developpeur.fromPrenom("Julien");
+}</pre>
+        </article>
+</slide>
+
+<slide>
+      <hgroup>
+        <h2>Pas d'interfaces explicites</h2>
+      </hgroup>
+      <article>
+        <p>Chaque classe Dart déclare une interface implicite</p>
+        <p>Pour définir une "pseudo-interface", il faut passer par une classe abstraite</p>
+        <pre class="prettyprint" data-lang="dart">
+abstract class I {
+  String aMethod();
+}
+
+class A implements I {
+  String aMethod() => "some text";
+}</pre>
+        </article>
+</slide>
+
+
+
+
+ <slide>
+      <hgroup>
+        <h2>Le typage statique optionnel</h2>
+        <h3>P’t'et’ ben qu’oui... p’t'et’ ben qu’non... !?</h3>
+      </hgroup>
+      <article>
+        <ul>
+          <li>Les types sont syntaxiquement optionnels</li>
+          <li>Ils n'ont aucun effet au runtime</li>
+          <br>
+          <li>Servent à documenter le code</li>
+          <li>Sont interprétés par les IDE pour fournir des feedback rapides et favoriser la complétion</li>
+        </ul>
+        <p>Mais pourquoi donc un typage Optionnel ?</p>
+        <p>Pour permettre une adoption massive par le plus grand nombre de développeurs, habitués au typage statique ou au typage dynamique</p>
+        
+      </article>
+    </slide>
+
+ <slide>
+      <hgroup>
+        <h2>Le typage statique optionnel</h2>
+        <h3>Un exemple</h3>
+      </hgroup>
+      <article>
+        <p>Les deux syntaxes suivantes sont strictement équivalentes</p>
+          <pre class="prettyprint" data-lang="dart">
+void sayHello(String name){
+  print('Hello $name');
+}</pre>
+<pre class="prettyprint" data-lang="dart">
+sayHello(name){
+  print('Hello $name');
+}</pre>
+      </article>
+    </slide>
+
+
+<slide>
+      <hgroup>
+        <h2>Fonctions et Closures</h2>
+      </hgroup>
+      <article>
+        <p>Les fonctions</p>
+         <pre class="prettyprint" data-lang="dart">
+void sayHello(String name){
+  print('Hello $name');
+}
+// Est équivalent à
+void sayHello(String name) => print('Hello $name');</pre>
+<p>Les fonctions sont des objets de premier niveau</p>
+<pre class="prettyprint" data-lang="dart">
+var list = ['Julien', 'Jean', 'Paul'];
+list.forEach(sayHello)</pre>
+<p>Que l'on peut aussi écrire ainsi</p>
+<pre class="prettyprint" data-lang="dart">
+list.forEach((e) => print('Hello $e'))</pre>
+      </article>
+    </slide>
+
+<slide>
+  <hgroup>
+    <h2>Opérateur Cascade</h2>
+  </hgroup>
+  <article>
+    <p>À la place de...</p>
+    <pre class="prettyprint" data-lang="dart">
+var button = query('#button')
+button.text = 'Click to Confirm'                        
+button.classes.add('important')                         
+button.on.click.add((e) => window.alert('Confirmed!'));</pre> 
+  <p>On peut écrire...</p>
+    <pre class="prettyprint" data-lang="dart">
+query('#button')
+  ..text = 'Click to Confirm'                        
+  ..classes.add('important')                         
+  ..on.click.add((e) => window.alert('Confirmed!'));</pre> 
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Encore un peu ?</h2>
+  </hgroup>
+  <article>
+    <ul>
+      <li>A Tour of the Dart Language</li>
+      <li><a href="http://www.dartlang.org/docs/dart-up-and-running/ch02.html">http://www.dartlang.org/docs/dart-up-and-running/ch02.html</a></li>
+      <br />
+      <li>Les paramètres optionnels</li>
+      <li>Les génériques</li>
+      <li>La gestion des exceptions</li>
+      <li>Packages, librairies, imports</li>
+      <li>...</li>
+    </ul>
+  </article>
+</slide>
+
+ <slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Les librairies</h2>
+    </hgroup>
+  </slide>
+
+
+<slide>
+  <hgroup>
+    <h2>dart:html</h2>
+    <h3>Manipuler les objets et éléments du DOM</h3>
+  </hgroup>
+  <article>
+    <p>Une API de recherche d'éléments à la JQuery</p>
+    <pre class="prettyprint" data-lang="dart">
+Element elem1 = query('#monid');            // Un élément ayant l'id 'monid'
+Element elem2 = query('.cssClass');         // Un élément ayant la class 'cssClass'
+List&lt;Element&gt; elems1 = queryAll('div');    // Tous les éléments ayant le tag (&lt;div&gt;).
+List&lt;Element&gt; elems2 = queryAll('input[type="text"]'); // Find all text inputs.</pre>
+<p>La gestion des évènements</p>
+<pre class="prettyprint" data-lang="dart">
+query('#submitInfo').on.click.add((e) => submitData());</pre>
+<p>Mais aussi... création et modifications d'éléments HTML... HttpRequest</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>dart:isolate</h2>
+    <h3>La gestion de la concurrence made in Dart</h3>
+  </hgroup>
+  <article>
+    <p>Dart est monothread, mais propose un modèle de concurrence inspiré d'Erlang et basé sur les acteurs</p>
+    <br>
+    <p>Tout code Dart est exécuté au sein d'un Isolate</p>
+    <p>Les isolates ne partagent aucun espace mémoire</p>
+    <br>
+    <p>Ils communiquent par passage de messages uniquement</p>
+
+
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Les autres librairies Dart</h2> 
+  </hgroup>
+  <article>
+    <ul>
+      <li>dart:core</li>
+      <ul>
+        <li>Collections, Exceptions, classes utilitaires</li>
+      </ul>
+      <li>dart:io</li>
+      <ul>
+        <li>Pour l'exécution côté serveur</li>
+      </ul>
+      <li>dart:math</li>
+      <li>dart:json</li>
+      <li>dart:crypto</li>
+    </ul>
+   
+  </article>
+</slide>
+
+<slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Les modes d'exécution</h2>
+    </hgroup>
+  </slide>
+
+<slide>
+  <hgroup>
+    <h2>Dans le navigateur, nativement</h2>
+    <h3>Le mode 'classique' d'exécution</h3>
+  </hgroup>
+  <article>
+     <pre class="prettyprint" data-lang="html">
+&lt;script type='application/dart'&gt;
+  void main() {
+    HTMLElement element = document.getElementById('message');
+    element.innerHTML = 'Hello Lannion';
+  }
+&lt;/script&gt;
+</pre>
+<p>Le code est exécuté par la VM Dart dans le navigateur</p>
+<p>Ne fonctionne que dans Dartium... pour l'instant</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Dans le navigateur, compilé en JavaScript</h2>
+    <h3>Le mode compatibilité</h3>
+  </hgroup>
+  <article>
+    <p>Ajout du script dart.js dans le code source</p>
+     <pre class="prettyprint" data-lang="html">
+&lt;script type="application/dart" src="web/CodeDarmor.dart"&gt;&lt;/script&gt;
+&lt;script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"&gt;&lt;/script&gt;</pre>
+<p>On le retrouve ainsi dans le DOM</p>
+<pre class="prettyprint" data-lang="html">
+&lt;script src="http://127.0.0.1:3030/Users/julienvey/dart/CodeDarmor/web/CodeDarmor.dart.js"&gt;&lt;/script&gt;
+&lt;script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"&gt;&lt;/script&gt;</pre>
+<p>Si le navigateur n'est pas capable d'exécuter du Dart, il utilise la version compilé en JavaScript avec dart2js</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>dart2js</h2>
+  </hgroup>
+  <article>
+    <p>dart2js transforme une application Dart en application JavaScript</p>
+    <p>Phase de compilation semblable à ce que l'on peut avoir avec GWT</p>
+    <ul>
+      <li>Supression de code mort</li>
+      <li>Optimisation et obfuscation</li>
+    </ul>
+    <br>
+    <p>Étape obligatoire pour qu'une application Dart soit compatible avec tous les navigateurs du marché</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Dart côté serveur</h2>
+    <h3>Le mode 'full dart'</h3>
+  </hgroup>
+  <article>
+  <p>Dart fourni une machine virtuelle autonome pouvant être lancée en ligne de commande</p>
+  <br>
+  <p>Permet de développer des applications Dart Serveur</p>
+  </article>
+</slide>
+
+<slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Dart Web Components</h2>
+      <h3 style="color:#515151">Le framework web de Dart</h3>
+    </hgroup>
+  </slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>Une initiative commune aux différents acteurs du web</h3>
+  </hgroup>
+  <article>
+    <p>Favoriser la composition et la réutilisation d'éléments HTML et CSS</p>
+    <p><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html">http://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html</a></p>
+    <br>
+    <p>Deux spécifications en cours</p>
+    <ul>
+      <li>HTML Templates</li>
+      <li>Shadow DOM</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>Les templates</h3>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;template id="commentTemplate"&gt;
+  &lt;div&gt;
+    &lt;img src=""&gt;
+    &lt;div class="comment"&gt;&lt;/div&gt;
+    …
+  &lt;/div&gt;
+&lt;/template&gt;
+
+var t = document.querySelector("#commentTemplate");
+// Populate content and img[src] values in the template.
+someElement.appendChild(t.content.cloneNode());</pre>
+<p>L'élément est parsé mais le code n'est pas exécuté et le dom n'est pas affiché</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>Les éléments Custom - Définition</h3>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;element extends="button" name="x-fancybutton"&gt;
+    &lt;template&gt;
+        &lt;style scoped&gt;
+            div.fancy {
+                …
+            }
+        &lt;/style&gt;
+        &lt;div class="fancy"&gt;
+            &lt;content&gt;&lt;/content&gt;
+            &lt;div id="t"&gt;&lt;/div&gt;
+            &lt;div id="l"&gt;&lt;/div&gt;
+            &lt;div id="b"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/template&gt;
+&lt;/element&gt;</pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>Les éléments Custom - Utilisation</h3>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;element extends="button" name="x-fancybutton"&gt;  &lt;!-- definition --&gt;
+  ...
+&lt;/element&gt;
+
+&lt;button is="x-fancybutton" onclick="showTimeClicked(event);"&gt;  &lt;!-- use --&gt;
+    Show time
+&lt;/button&gt;</pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>Le shadow DOM</h3>
+  </hgroup>
+  <article>
+    <p>Le DOM contenu dans l'élément custom n'est pas visible</p>
+    <br>
+    <p>Seul le contenu de l'élément content est visible</p>
+    <br>
+    <p></p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Web Components</h2>
+    <h3>En conclusion</h3>
+  </hgroup>
+  <article>
+    <p>Les Web Components constituent une grande avancée pour le développement d'applications Web</p>
+    <br>
+    <p>Les spécifications n'en sont qu'à l'état Draft</p>
+    <br>
+    <p>Ces fonctionnalités ne sont donc pas encore disponible dans tous nos navigateurs</p>
+    <br>
+    <p>Que fait Dart pour y remédier ?</p>
+  </article>
+</slide>
+
+
+<slide>
+  <hgroup>
+    <h2>Dart & les Web Components</h2>
+    <h3>Le tooling</h3>
+  </hgroup>
+  <article>
+    
+    <p>Dart fournit un pré-compilateur pour permettre l'utilisation des Web Components pour tous les navigateurs</p>
+    <ul>
+      <li>En ligne de commande</li>
+      <li>Embarqué dans le Dart Editor</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Dart & les Web Components</h2>
+    <h3>Model-Driven-View</h3>
+  </hgroup>
+  <article>
+    <p>Outre les composants, Dart Web Component fournit également un mécanisme de databinding</p>
+    <ul>
+      <li>Databinding unidirectionnel</li>
+      <li>Databinding bidirectionnel</li>
+      <li>Template conditionnel</li>
+      <li>Boucles</li>
+      <li>Listener d'évènements du DOM</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Databinding</h2>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;div&gt;
+  Input:
+  &lt;input type="text" data-bind="value:str" placeholder="type something here"&gt; 
+  &lt;div&gt; Value: {{str}}&lt;/div&gt;
+  &lt;div&gt; Length: {{str.length}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type="application/dart"&gt;
+  String str = '';
+  main() {}
+&lt;/script&gt;</pre>
+<img src="images/databinding.png" style="margin-left:auto; margin-right:auto;"/>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Templating conditionnel</h2>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;div&gt;
+  &lt;div&gt; Input1: &lt;input type="text" data-bind="value:str1"&gt;&lt;/div&gt;
+  &lt;div&gt; Input2: &lt;input type="text" data-bind="value:str2"&gt;&lt;/div&gt;
+  &lt;template instantiate="if str1 == str2"&gt;
+    &lt;div&gt;They match!&lt;/div&gt;
+  &lt;/template&gt;
+&lt;/div&gt;
+&lt;script type="application/dart"&gt;
+  String str1 = '';
+  String str2 = '';
+  main() {}
+&lt;/script&gt;</pre>
+<img src="images/conditionnel.png" style="margin-left:auto; margin-right:auto;"/>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Handlers d'évènements</h2>
+  </hgroup>
+  <article>
+    <pre class="prettyprint" data-lang="html">
+&lt;div&gt;
+  &lt;button data-action="click:increment"&gt;Click me&lt;/button&gt;
+  &lt;span&gt;(click count: {{count}})&lt;/span&gt;
+&lt;/div&gt;
+&lt;script type="application/dart"&gt;
+  int count = 0;
+  void increment(e) { count++; }
+  main() {}
+&lt;/script&gt;</pre>
+<img src="images/event.png" style="margin-left:auto; margin-right:auto;"/>
+  </article>
+</slide>
+
+<slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Dart</h2>
+      <h3 style="color:#515151">En conclusion</h3>
+    </hgroup>
+  </slide>
+
+<slide>
+  <hgroup>
+    <h2>État des lieux</h2>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Ouverture du langage au public en Octobre 2011</li>
+      <li>Sortie en version Milestone 1 en Octobre 2012</li>
+      <br>
+      <li>Editor, Web Components en constante amélioration</li>
+      <br>
+      <li>Premiers benchs très satisfaisant</li>
+      <ul>
+        <li>Temps au démarrage 10x plus rapide</li>
+      </ul>
+      <br>
+      <li>Google investit fortement dans Dart</li>
+      <ul>
+        <li>Une vingtaine de développeurs à plein temps dans différents pays</li>
+        <li>De nombreuses présentations lors du dernier Google I/O</li>
+      </ul>
+    </ul>
+  </article>
+</slide>
+
+
+<slide>
+  <hgroup>
+    <h2>Quelques resources</h2>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Site officiel</li>
+      <ul>
+        <li><a href="http://dartlang.org">dartlang.org</a></li>
+      </ul>
+      <li>les patterns JavaScript en Dart</li>
+      <ul>
+        <li><a href="http://synonym.dartlang.org/">synonym.dartlang.org</a></li>
+      </ul>
+      <li>Les sources de Dart</li>
+      <ul>
+        <li><a href="https://github.com/dart-lang">https://github.com/dart-lang</a></li>
+      </ul> 
+      <br>
+      <li>Communauté Française sur le langage Dart</li>
+      <ul>
+        <li><a href="http://gplus.to/dartlangfr">gplus.to/dartlangfr</a></li>
+        <li><a href="https://groups.google.com/forum/?hl=fr#!forum/dartlangfr">groups.google.com/forum/#!forum/dartlangfr</a></li>
+      </ul>
+    </ul>
+  </article>
+</slide>
+
+<slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Démo Dart Editor</h2>
+    </hgroup>
+  </slide>
+
+<slide class="segue nobackground">
+    <aside class="gdbar"><img src="images/dart/dart_116_116.gif"></aside>
+    <hgroup class="auto-fadein">
+      <h2 style="color:#515151">Questions ?</h2>
+    </hgroup>
+  </slide>
+
+  <slide class="segue nobackground">
+    <aside class="gdbar right"><img src="images/dart/dart_116_116.gif"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2 style="color:#515151">&lt;Thank You!&gt;</h2>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+</body>
+</html>

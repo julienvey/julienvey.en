@@ -3,13 +3,24 @@ layout: page
 title: Publications - Julien Vey
 ---
 
-<p class="lead">Outre les articles de ce <a href="/blog.html">blog</a>, je contribue également au blog de <a href="http://blog.zenika.com">Zenika</a>. Voici les différents articles que j’ai pu rédiger.</p>
+<p class="lead">Outre les articles de ce <a href="/blog.html">blog</a>, je contribue également au blog de <a href="http://blog.zenika.com">Zenika</a>.</p>
+<p class="lead">J'ai également eu l'occasion de donner des présentations à Zenika ou dans différents User Group.</p> 
+<p class="lead">Voici les différents articles que j’ai pu rédiger ainsi que les slides des présentations.</p>
 
-<p class="lead">Articles techniques</p>
+<p class="lead well">Présentations</p>
 
 <ul class="posts">
 	<li>
-		<span>20 Dec 2010</span> &raquo;
+		<span>13 novembre 2012</span> &raquo;
+		<a href="/presentations/dart-code-armor">"Dart, un langage moderne pour le web" au Code d'Armor à Lannion</a>
+	</li>
+</ul>
+
+<p class="lead well">Articles techniques</p>
+
+<ul class="posts">
+	<li>
+		<span>29 Aou 2012</span> &raquo;
 		<a href="http://blog.zenika.com/index.php?post/2012/08/29/Dart-un-langage-moderne-pour-le-web">Dart, un langage moderne pour le web</a>
 	</li>
 	<li>
@@ -26,7 +37,7 @@ title: Publications - Julien Vey
 	</li>
 </ul>
 
-<p class="lead">Articles Divers</p>
+<p class="lead well">Articles Divers</p>
 
 <ul class="posts">
 	<li>
