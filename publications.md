@@ -14,6 +14,10 @@ title: Publications - Julien Vey
 		<span>13 novembre 2012</span> &raquo;
 		<a href="/presentations/dart-code-armor">"Dart, un langage moderne pour le web" au Code d'Armor à Lannion</a>
 	</li>
+	<li>
+		<span>16 janvier 2013</span> &raquo;
+		<a href="/presentations/dart-nantes-jug">"Dart, un langage moderne pour le web" au Nantes JUG</a>
+	</li>
 </ul>
 
 <p class="lead well">Articles techniques</p>
