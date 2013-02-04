@@ -3,15 +3,17 @@ layout: default
 ---        
 
 <div class="page-header">
-  <h1>{{ page.title }}</h1><p class="lead">{{ page.date | date: "%d %b %Y" }}</p>
+  <h1>{{ page.title }}</h1>
+  <span class="muted" style="padding-right:20px;"><strong>Publié le {{ page.datefr }}</strong></span>
+  {% for tag in page.tags %}
+  <span class="label label-info">{{tag}}</span>
+  {% endfor %}
 </div>
 
 <div>
-  
+{{ content }}  
 </div>
-
-{{ content }}
-
+<br>
 <hr />
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -26,3 +28,4 @@ layout: default
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
