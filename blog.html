@@ -2,18 +2,20 @@
 layout: default
 title: Blog - Julien Vey
 ---
-<p class="lead">Les articles publiés</p>
-
-<ul class="posts">
-    {% for post in site.posts %}
-	    {% unless post.draft %}
-	    <li>
-	        <span>{{ post.date | date_to_string }}</span> &raquo;
-	        <a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	    {% endunless %}
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="row">
+	<div class="span3">
+		<a href="{{ post.url }}"><img class="well" src="{{ post.img }}"></a>
+	</div>
+	<div class="span9">
+		<h3 style="margin-bottom: 0; margin-top:0"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<span class="muted">Publié le <strong>{{ post.datefr }}</strong></span><br>
+		<br>
+		<span style="text-align:justify">{{ post.preview }} ... <a href="{{ post.url }}">Lire la suite</a></span>
+	</div>
+</div>
+<hr>
+{% endfor %}
 
 <br />
 <br />
