@@ -41,3 +41,48 @@
 .dl-horizontal dd {
   margin-left: 260px;
 }
+
+pre.prettyprint {
+  -webkit-border-image: none;
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(121, 121, 121) !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  box-sizing: border-box;
+  color: rgb(121, 121, 121);
+  display: block;
+  font-family: Inconsolata, 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 10px 0 10px 30px !important;
+  position: relative;
+  vertical-align: baseline;
+  white-space: pre;
+}
+
+.prettyprint .str, .prettyprint .atv {
+  color:#009f5d
+}
+.prettyprint .kwd, .prettyprint .tag {
+  color:#06c
+}
+.prettyprint .com {
+  color:#797979;
+  font-style:italic
+}
+.prettyprint .lit {
+  color:#7f0000
+}
+.prettyprint .pun, .prettyprint .opn, .prettyprint .clo {
+  color:#515151
+}
+.prettyprint .typ, .prettyprint .atn, .prettyprint .dec, .prettyprint .var {
+  color:#d94d3a
+}
+.prettyprint .pln {
+  color:#515151
+}
