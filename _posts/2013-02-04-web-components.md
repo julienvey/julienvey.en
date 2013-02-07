@@ -76,7 +76,21 @@ document.body.appendChild(<strong>t.content.cloneNode(true)</strong>);
 
 Le fait d'ajouter le template au DOM avec `.appendChild` va déclencher le chargement de l'élément. les `<script>` vont être exécutés, les images vont être chargées et les sons ou vidéos vont être joués.
 
-On voit donc que l'attribut `.content` nous donne accès au "corps" du template et va nous permettre de le manipuler, y ajouter d'autres éléments, positionner des attributs...
+On peut également accéder au contenu de l'élément.
+
+<pre class="prettyprint" data-lang="javascript">
+t.content.querySelector('img').src = '/mon/path/vers/mon/image';
+</pre>
+
+On voit donc que l'attribut `.content` nous donne accès au "corps" du template et va nous permettre de le manipuler, y ajouter d'autres éléments, positionner des attributs... Voici l'interface du DOM de l'élément `<template>`
+
+<pre class="prettyprint" data-lang="javascript">
+interface HTMLTemplateElement : HTMLElement {
+    readonly attribute DocumentFragment content;
+}
+</pre>
+
+###Le shadow DOM... mais il est où ?!
 
 Resources :
 TODO : Ajout la prez de @ebidel
@@ -86,3 +100,4 @@ TODO : Ajout la prez de @ebidel
 ê
 è
 à
+ù
