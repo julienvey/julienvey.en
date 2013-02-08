@@ -90,7 +90,27 @@ interface HTMLTemplateElement : HTMLElement {
 }
 </pre>
 
-###Le shadow DOM... mais il est où ?!
+###Le shadow DOM... mais il est où ?
+
+####L'encapsulation d'aujourd'hui... en quelque sorte :(
+<pre class="prettyprint" data-lang="html">
+&lt;iframe&gt;
+</pre>
+
+Les iframes nous offrent un certain niveau d'encapsulation dans nos applications web mais restent trop contraignantes et problématiques pour être utilisées à grande échelle
+
+####L'encapsulation de demain
+Le principe du Shadow DOM est de masquer en partie le DOM interne d'un composant. Afin de laisser la responsabilité de l'implémentation d'un composant à la personne qui le fournit.
+
+En fouillant un peu dans le DOM, on se rend compte que certains éléments masquent déjà leur implémentation interne
+
+<pre class="prettyprint" data-lang="html">
+&lt;input type="date"&gt;
+
+&lt;audio controls src="/ma/super/chanson"&gt;&lt;/audio&gt;
+</pre>
+
+Le Shadow DOM va donc nous permettre de mettre en place les mêmes mécanismes que ceux qui sont déjà utilisés par les navigateurs pour implémenter les balises natives.
 
 Resources :
 TODO : Ajout la prez de @ebidel
@@ -99,5 +119,6 @@ TODO : Ajout la prez de @ebidel
 é
 ê
 è
+ê
 à
 ù
