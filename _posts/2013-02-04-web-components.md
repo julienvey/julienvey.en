@@ -30,6 +30,8 @@ Voilà pour le principal, mais c'est aussi
 * Observers (pour le modèle ainsi que pour le DOM)
 * Variables CSS
 
+Dans ce premier article de la série, je vais vous parler des templates
+
 ###Les Templates... retour vers le futur
 
 Avant de voir ce que nous allons pouvoir faire grâce aux Web Components, regardons déjà ce que nous faisons de nos jours.
@@ -75,13 +77,7 @@ t.content.querySelector('img').src = 'http://...';
 document.body.appendChild(<strong>t.content.cloneNode(true)</strong>);
 </pre>
 
-Le fait d'ajouter le template au DOM avec `.appendChild` va déclencher le chargement de l'élément. les `<script>` vont être exécutés, les images vont être chargées et les sons ou vidéos vont être joués.
-
-On peut également accéder au contenu de l'élément.
-
-<pre class="prettyprint" data-lang="javascript">
-t.content.querySelector('img').src = '/mon/path/vers/mon/image';
-</pre>
+Le fait d'ajouter le template au DOM avec `.appendChild` va déclencher le chargement de l'élément. les `<script>` vont être exécutés, les images vont être chargées et les sons ou vidéos vont être joués. Dans cet exemple, on ajoute la source de l'image de façon dynamique, ce qui est tout à fait possible car la balise `img` n'est pas interprétée tant que la méthod `cloneNode` n'a pas été appelé.
 
 On voit donc que l'attribut `.content` nous donne accès au "corps" du template et va nous permettre de le manipuler, y ajouter d'autres éléments, positionner des attributs... Voici l'interface du DOM de l'élément `<template>`
 
@@ -91,4 +87,4 @@ interface HTMLTemplateElement : HTMLElement {
 }
 </pre>
 
-<strong>Et maintenant direction le Shadow DOM pour le prochain article !</strong>
+<strong>Et maintenant direction le Shadow DOM pour le prochain article ! (Coming soon)</strong>
