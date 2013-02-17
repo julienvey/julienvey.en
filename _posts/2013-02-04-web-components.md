@@ -1,6 +1,6 @@
 ---
-date: '2013-02-04 09:00:00'
-datefr: 4 Février 2013
+date: '2013-02-18 09:00:00'
+datefr: 18 Février 2013
 layout: post
 status: publish
 title: Web Components, le nouvel espoir des développeurs Web - Les templates
