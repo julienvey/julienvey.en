@@ -4,7 +4,7 @@ datefr: 1er Novembre 2012
 layout: post
 status: publish
 title: Nouveau blog pour une nouvelle vie
-img: ./assets/img/posts/jekyll-150.png
+img: /assets/img/posts/jekyll-150.png
 tags: blog jekyll wordpress
 more : 100
 preview: Mon site perso était précédemment réalisé avec Wordpress. J'avais choisi wordpress il y a déjà quelques années alors que je n'étais qu'un étudiant qui croyait encore qu'Hibernate avait quelque chose à voir avec le sommeil des marmotes. Je ne vais pas critiquer outre mesure wordpress. Cela reste une très bonne plateforme pour 
