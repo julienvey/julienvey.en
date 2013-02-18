@@ -90,11 +90,31 @@ Ce qui donne comme résultat :
 </pre>
 
 Problème ! On remarque ici que tout le contenu de notre noeud "host" a été supprimé et remplacé par le Shadow DOM.
+On voudrait bien garder notre contenu et l'insérer dans notre shadow DOM.
+Pour cela...
 
-### Quelques resources 
-- La présentation [&lt;web&gt;components&lt;/web&gt;](http://html5-demos.appspot.com/static/webcomponents/index.html#2) de Eric Bidelman, Google Chrome Team, dont je me suis inspiré pour écrire cet article
-- La spécification W3C [Web Components](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html)
-- La page Google+ [Web Components](https://plus.google.com/103330502635338602217/posts)
+### Shadow DOM insertion points
+
+Les insertions points (ou points d'insertion en bon français) vont nous permette d'insérer le contenu de notre élément host au sein même de notre Shadow DOM.
+Dans notre cas, les balises `<h1>Titre</h1>`, `<h2>Sous-titre</h2>` et `<div>Contenu</div>`
+
+Pour définir des points d'insertion au sein de notre shadow DOM, nous allons utiliser la balise `<content>`
+
+L'attribut `select` va nous permettre de définir des sélecteurs CSS pour spécifier quels éléments doivent être insérés et où ils doivent l'être.
+
+Voici un exemple de shadow DOM dans lequel on définit plusieurs points d'insertion
+
+<pre class="prettyprint" data-lang="html">
+&lt;hgroup&gt;
+  <strong>&lt;content select="h2"&gt;&lt;/content&gt;</strong>
+  &lt;div&gt;Bouh ! Je suis le shadow DOMMMM !&lt;/div&gt;
+  <strong>&lt;content select="h1:first-child"&gt;&lt;/content&gt;</strong>
+&lt;/hgroup&gt;
+<strong>&lt;content select="*"&gt;&lt;/content&gt;</strong>
+</pre>
+
+Si l'on reprend le DOM originel et que l'on y injecte le shadow DOM, le résultat est le suivant avec les balises Titre, Sous-titre et Contenu
+
 
 é
 ê
