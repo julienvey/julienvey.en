@@ -87,4 +87,9 @@ interface HTMLTemplateElement : HTMLElement {
 }
 </pre>
 
+### Quelques resources 
+- La présentation [&lt;web&gt;components&lt;/web&gt;](http://html5-demos.appspot.com/static/webcomponents/index.html#2) de Eric Bidelman, Google Chrome Team, dont je me suis inspiré pour écrire cet article
+- La spécification W3C [Web Components](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html)
+- La page Google+ [Web Components](https://plus.google.com/103330502635338602217/posts)
+
 <strong>Et maintenant direction le Shadow DOM pour le prochain article ! (Coming soon)</strong>
