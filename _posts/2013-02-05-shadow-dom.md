@@ -9,9 +9,6 @@ tags: web-components html chrome shadow-dom dom
 more : 100
 preview: Après avoir introduit les Web Components et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 ---
-[<< Précédent : Web Components - Les templates](http://julienvey.com/2013/02/18/web-components/)
-
-
 Après avoir introduit les [Web Components](http://julienvey.com/2013/02/18/web-components/) et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 
 ###Le shadow DOM... mais il est où ?
@@ -161,10 +158,49 @@ Si l'on reprend le DOM host original (avec Titre, Sous-titre et Contenu) et que 
 
 En plus de masquer l'implémentation interne des composants, le Shadow DOM nous permet donc de réordonner selon nous souhaits le DOM.
 
+### Encapsulation des styles
+
+Maintenant que mon DOM est organisé comme je le souhaite, j'aimerais bien y ajouter un peu de couleur, de style...
+
+* Puis-je utiliser les styles extérieurs dans mon Shadow DOM ?
+* Est-ce que les styles que j'ai défini vont polluer le reste du DOM de ma page ?
+
+Par défaut, le comportement est le suivant : 
+
+* Les styles définis à l'intérieur du Shadom DOM sont scopés au niveau de celui-ci
+* Les styles communs à la page ne sont pas pas pris en compte à l'intérieur du Shadow DOM
+
+Dans l'exemple qui suit, le style `color: red` sera appliqué uniquement à la balise `<h2>` qui le suit. Les autres balises `<h2>` définies dans le reste de la page n'auront pas de visibilité sur ce style. À l'inverse, les styles définis globalement ne "rentreront" pas dans le shadow-root.
+<pre class="prettyprint" data-lang="javascript">
+var host = document.querySelector('#host');
+var shadow = host.createShadowRoot();
+shadow.innerHTML = '&lt;style&gt;h2 { color: red; }&lt;/style&gt;' + 
+                   '&lt;h2&gt;Bouh ! Je suis le shadow DOMMMM !&lt;/h2&gt;' +
+                   '&lt;div&gt;et je viens de remplacer le contenu du noeud&lt;/div&gt;';
+</pre>
+
+Certaines propriétés sur l'élément `shadow` vont nous permettre de prendre le controle sur ces comportements
+
+* `applyAuthorStyles` permet de faire "rentrer" les styles définis globalement dans le shadow-root (false par défaut)
+* `resetStyleInheritance` 
+
+<pre class="prettyprint" data-lang="javascript">
+shadow.innerHTML = ...;
+shadow.applyAuthorStyles = true;
+shadow.resetStyleInheritance = true; 
+</pre>
+
+#### Ajouter du style sur l'élément host
+TODO : Styler l'element host
+
+####Les autres articles de la série sur les WebComponents : 
+
+* [Web Components, le nouvel espoir des développeurs Web - Les templates](http://julienvey.com/2013/02/18/web-components/)
 
 é
 ê
 è
 ê
 à
+À
 ù
