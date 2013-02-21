@@ -9,7 +9,7 @@ tags: web-components html chrome shadow-dom dom
 more : 100
 preview: Après avoir introduit les Web Components et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 ---
-Après avoir introduit les [Web Components](http://julienvey.com/2013/02/18/web-components/) et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
+Après avoir introduit les [Web Components](http://julienvey.com/2013/02/18/web-components/) et sa première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 
 ###Le shadow DOM... mais il est où ?
 
@@ -156,7 +156,7 @@ Si l'on reprend le DOM host original (avec Titre, Sous-titre et Contenu) et que 
 &lt;/div&gt;
 </pre>
 
-En plus de masquer l'implémentation interne des composants, le Shadow DOM nous permet donc de réordonner selon nous souhaits le DOM.
+En plus de masquer l'implémentation interne des composants, le Shadow DOM nous permet donc de réordonner selon nos souhaits le DOM.
 
 ### Encapsulation des styles
 
@@ -182,7 +182,7 @@ shadow.innerHTML = '&lt;style&gt;h2 { color: red; }&lt;/style&gt;' +
 Certaines propriétés sur l'élément `shadow` vont nous permettre de prendre le controle sur ces comportements
 
 * `applyAuthorStyles` permet de faire "rentrer" les styles définis globalement dans le shadow-root (false par défaut)
-* `resetStyleInheritance` 
+* `resetStyleInheritance` permet de remettre à zero les styles hérités aux "barrières" du shadow-root (false par défaut)
 
 <pre class="prettyprint" data-lang="javascript">
 shadow.innerHTML = ...;
@@ -191,16 +191,29 @@ shadow.resetStyleInheritance = true;
 </pre>
 
 #### Ajouter du style sur l'élément host
-TODO : Styler l'element host
+
+Le shadow DOM nous permet donc de scoper nos feuilles de style. Mais comment styler l'élement host ?
+
+Tout simplement en utilisant le sélecteur `@host` dans notre feuille de style
+
+<pre class="prettyprint" data-lang="html">
+&lt;style&gt;
+  @host {
+    /* Le style de l'élément host */
+  }
+&lt;/style&gt;
+</pre>
+
+### La suite, la suite !
+
+Après avoir introduit dans un premier temps [les templates](http://julienvey.com/2013/02/18/web-components/), nous venons de voir le Shadow DOM, deuxième fonctionnalité des Web Components. 
+
+Mais je vous l'accorde, ces deux éléments pris séparément ne semblent pas si révolutionnaires. 
+
+C'est pourquoi le prochain article va parler des... éléments customs. Comment utiliser les templates et le Shadow DOM pour enrichir la liste des éléments HTML avec ses propres éléments (Coming soon)
+
+<br>
 
 ####Les autres articles de la série sur les WebComponents : 
 
 * [Web Components, le nouvel espoir des développeurs Web - Les templates](http://julienvey.com/2013/02/18/web-components/)
-
-é
-ê
-è
-ê
-à
-À
-ù
