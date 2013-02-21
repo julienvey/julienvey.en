@@ -9,7 +9,10 @@ tags: web-components html chrome shadow-dom dom
 more : 100
 preview: Après avoir introduit les Web Components et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 ---
-Après avoir introduit les Web Components et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
+[<< Précédent : Web Components - Les templates](http://julienvey.com/2013/02/18/web-components/)
+
+
+Après avoir introduit les [Web Components](http://julienvey.com/2013/02/18/web-components/) et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 
 ###Le shadow DOM... mais il est où ?
 
@@ -38,7 +41,7 @@ Ainsi, un lecteur vidéo que l'on voit ainsi...
 
 <pre class="prettyprint" data-lang="html">
 &lt;video controls="" height="300" src="/ma/super/video"&gt;
-  #shadow-root
+  <em>#shadow-root</em>
     &lt;div&gt;
       &lt;div&gt;
         &lt;div&gt;
@@ -83,7 +86,7 @@ Ce qui donne comme résultat :
 
 <pre class="prettyprint" data-lang="html">
 &lt;div id="host"&gt;
-  #shadow-root
+  <em>#shadow-root</em>
     &lt;h2&gt;Bouh ! Je suis le shadow DOMMMM !&lt;/h2&gt;
     &lt;div&gt;et je viens de remplacer le contenu du noeud&lt;/div&gt;
 &lt;/div&gt;
@@ -96,13 +99,42 @@ Pour cela...
 ### Shadow DOM insertion points
 
 Les insertions points (ou points d'insertion en bon français) vont nous permette d'insérer le contenu de notre élément host au sein même de notre Shadow DOM.
-Dans notre cas, les balises `<h1>Titre</h1>`, `<h2>Sous-titre</h2>` et `<div>Contenu</div>`
+
+#### Tout d'abord un exemple simple...
 
 Pour définir des points d'insertion au sein de notre shadow DOM, nous allons utiliser la balise `<content>`
 
-L'attribut `select` va nous permettre de définir des sélecteurs CSS pour spécifier quels éléments doivent être insérés et où ils doivent l'être.
+Imaginons que je souhaite utiliser le DOM suivant comme host...
+<pre class="prettyprint" data-lang="html">
+&lt;div id="host"&gt;
+  &lt;div&gt;Hello World !&lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-Voici un exemple de shadow DOM dans lequel on définit plusieurs points d'insertion
+pour ce shadow DOM...
+
+<pre class="prettyprint" data-lang="html">
+&lt;div&gt;Je commence à apprendre les Web Components&lt;/div&gt;
+<strong>&lt;content&gt;&lt;/content&gt;</strong>
+&lt;div&gt;J'ai fini d'apprendre les Web Components&lt;/div&gt;
+</pre>
+
+Une fois le Shadow DOM injecté, le résultat est donc...
+
+<pre class="prettyprint" data-lang="html">
+&lt;div id="host"&gt;
+  <em>#shadow-root</em>
+    &lt;div&gt;Je commence à apprendre les Web Components&lt;/div&gt;
+    <strong>&lt;div&gt;Hello World !&lt;/div&gt;</strong>
+    &lt;div&gt;J'ai fini d'apprendre les Web Components&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+#### Utilisation des sélecteurs CSS 
+
+Voyons maintenant un exemple un peu plus complexe. Nous allons utiliser l'attribut `select` pour définir des sélecteurs CSS afin de spécifier quels éléments doivent être insérés et où.
+
+Voici un exemple de shadow DOM dans lequel on définit plusieurs points d'insertion en utilisant des sélecteurs 
 
 <pre class="prettyprint" data-lang="html">
 &lt;hgroup&gt;
@@ -113,7 +145,21 @@ Voici un exemple de shadow DOM dans lequel on définit plusieurs points d'insert
 <strong>&lt;content select="*"&gt;&lt;/content&gt;</strong>
 </pre>
 
-Si l'on reprend le DOM originel et que l'on y injecte le shadow DOM, le résultat est le suivant avec les balises Titre, Sous-titre et Contenu
+Si l'on reprend le DOM host original (avec Titre, Sous-titre et Contenu) et que l'on y injecte le shadow DOM, le résultat est le suivant 
+
+<pre class="prettyprint" data-lang="html">
+&lt;div id="host"&gt;
+  <em>#shadow-root</em>
+    &lt;hgroup&gt;
+      <strong>&lt;h2&gt;Sous-titre&lt;/h2&gt;</strong>
+      &lt;div&gt;Bouh ! Je suis le shadow DOMMMM !&lt;/div&gt;
+      <strong>&lt;h1&gt;Titre&lt;/h1&gt;</strong>
+    &lt;/hgroup&gt;
+    <strong>&lt;div&gt;contenu&lt;/div&gt;</strong>
+&lt;/div&gt;
+</pre>
+
+En plus de masquer l'implémentation interne des composants, le Shadow DOM nous permet donc de réordonner selon nous souhaits le DOM.
 
 
 é
