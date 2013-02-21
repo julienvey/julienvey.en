@@ -1,6 +1,6 @@
 ---
-date: '2013-02-20 09:00:00'
-datefr: 20 Février 2013
+date: '2013-02-22 09:00:00'
+datefr: 22 Février 2013
 layout: post
 status: publish
 title: Web Components - Le Shadow DOM
