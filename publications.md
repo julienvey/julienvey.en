@@ -4,7 +4,7 @@ title: Publications - Julien Vey
 ---
 
 <p class="lead">Outre les articles de ce <a href="/blog.html">blog</a>, je contribue également au blog de <a href="http://blog.zenika.com">Zenika</a>.</p>
-<p class="lead">J'ai également eu l'occasion de donner des présentations à Zenika ou dans différents User Group.</p> 
+<p class="lead">J'ai également eu l'occasion de donner des présentations dans différents User Group.</p> 
 <p class="lead">Voici les différents articles que j’ai pu rédiger ainsi que les slides des présentations.</p>
 
 

@@ -7,7 +7,7 @@ title: À propos - Julien Vey
 	<img src="images/face160.png" class="pull-left faceImage"/>
 
 	<p class="lead">Je travaille chez <a href="http://wwww.zenika.com">Zenika</a> à Paris</p>
-	<p class="lead">Je suis <strong>Développeur</strong>, Java & Web avant tout. Mes compétences principales : Java, GWT, HTML5, Spring, Hibernate. Un peu de jBPM et d'OSGi et mes intérets du moment : Dart. Pour plus de détails, consulter <a href="/cv.html">mon CV</a></p>
+	<p class="lead">Je suis <strong>Développeur</strong>, Java & Web avant tout. Mes compétences principales : Java, GWT, HTML5, Spring, Hibernate. Un peu de BPM et d'OSGi et mes intérets du moment : Dart. Pour plus de détails, consulter <a href="/cv.html">mon CV</a></p>
 	<p class="lead">Je suis <strong>Formateur</strong> : GWT, GWT Avancé, Google App Engine, OSGi, Git... Tout ça chez <a href="http://zenika.com/Formation/">Zenika</a></p>
 	<p class="lead">Je fais parfois du <strong>Conseil</strong>, sur ces mêmes sujets.</p> 
 	<p class="lead">Je rédige des articles de <strong>Blog</strong>, sur des sujets techniques ou d'actualité, que ce soit sur <a href="/index.html">ce blog</a> ou sur le <a href="http://blog.zenika.com/">blog de Zenika</a></p> 
