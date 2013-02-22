@@ -92,4 +92,4 @@ interface HTMLTemplateElement : HTMLElement {
 - La spécification W3C [Web Components](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/explainer/index.html)
 - La page Google+ [Web Components](https://plus.google.com/103330502635338602217/posts)
 
-<strong>Et maintenant direction le [Shadow DOM](http://julienvey.com/2013/02/22/shadow-dom/) pour [le prochain article](http://julienvey.com/2013/02/22/shadow-dom/) ! </strong>
+<strong>Et maintenant direction le [Shadow DOM](/2013/02/22/shadow-dom/) pour [le prochain article](/2013/02/22/shadow-dom/) ! </strong>

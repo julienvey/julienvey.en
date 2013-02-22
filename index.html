@@ -9,94 +9,17 @@ title: Julien Vey
 	
 </div>
 
-
-<div class="page-header">
-	<h1>Sur ce site...<small> vous trouverez</small></h1>
-</div>
-
+{% for post in site.posts %}
 <div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="/blog.html"><img class="well" src="/assets/img/bullhorn-60.png" alt="Twitter"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Je blog... en tout cas j'essaye, régulièrement si possible</p>
-			<p class="pull-right"><a href="/blog.html">Articles du blog</a></p>
-		</div>
+	<div class="span3">
+		<a href="{{ post.url }}"><img class="well" src="{{ post.img }}"></a>
 	</div>
-	<div class="span6">
-		<div class="span1">
-			<a href="/publications.html"><img class="well" src="/assets/img/pencil-60.png" alt="Github"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Cette page regroupe les différents articles que j'ai écrit sur le web ainsi que les slides des présentations que j'ai eu l'occasion de donner</p>
-			<p class="pull-right"><a href="/publications.html">Publications</a></p>
-		</div>
+	<div class="span9">
+		<h3 style="margin-bottom: 0; margin-top:0"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<span class="muted">Publié le <strong>{{ post.datefr }}</strong></span><br>
+		<br>
+		<span style="text-align:justify">{{ post.preview }} ... <a href="{{ post.url }}">Lire la suite</a></span>
 	</div>
 </div>
-<div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="https://plus.google.com/104319090218121337101"><img class="well" src="/assets/img/file-60.png" alt="Google+"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Ma formation, mes expériences, mes compétences... Le traditionnel CV en version Web</p>
-			<p class="pull-right"><a href="/cv.html">CV</a></p>
-		</div>
-	</div>
-	<div class="span6">
-		<div class="span1">   
-			<a href="/apropos.html"><img class="well" src="/assets/img/user-60.png" alt="Lanyrd"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Vous voulez savoir qui je suis, ce que je fais, c'est par ici.</p>
-			<p class="pull-right"><a href="/apropos.html">À propos</a></p>
-		</div>
-	</div>
-</div>
-
-
-<div class="page-header">
-	<h1>Découvrir <small> réseaux sociaux</small></h1>
-</div>
-
-<div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="http://twitter.com/julienvey"><img class="well" src="/assets/img/twitter.png" alt="Twitter"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Des tweets techniques, des tweets d'humeur ou d'opinion, ainsi que des annonces des différents évènements auxquels je participe</p>
-			<p class="pull-right"><a href="http://twitter.com/julienvey">Mon Twitter</a></p>
-		</div>
-	</div>
-	<div class="span6">
-		<div class="span1">
-			<a href="https://github.com/julienvey"><img class="well" src="/assets/img/octocat.png" alt="Github"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Des projets open-source, des snippets de code et même les sources de site</p>
-			<p class="pull-right"><a href="https://github.com/julienvey">Mon Github</a></p>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="https://plus.google.com/104319090218121337101"><img class="well" src="/assets/img/googleplus.png" alt="Google+"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>En tant que grand utilisateur de tous les produits Google, j'ai également mon profil Google+</p>
-			<p class="pull-right"><a href="https://plus.google.com/104319090218121337101">Ma page Google+</a></p>
-		</div>
-	</div>
-	<div class="span6">
-		<div class="span1">   
-			<a href="http://fr.linkedin.com/in/julienvey"><img class="well" src="/assets/img/linkedin.png" alt="Lanyrd"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Certainement la version en ligne la plus complète de mes expériences</p>
-			<p class="pull-right"><a href="http://fr.linkedin.com/in/julienvey">Mon profil LinkedIn</a></p>
-		</div>
-	</div>
-</div>
+<hr>
+{% endfor %}
