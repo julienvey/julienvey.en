@@ -58,6 +58,7 @@ title: Publications - Julien Vey
 	<div class="span10">
 		<span class="lead">Retour sur la nuit de l’info 2011</span><br>
 		<span class="muted">Blog Zenika, le 10 Janvier 2012</span><a href="http://blog.zenika.com/index.php?post/2012/01/09/Retour-sur-la-Nuit-de-l-info-2011"> Lire l'article</a><br>
+		<br>
 		<span class="lead">Nuit de l'info 2010 : Bravo aux vainqueurs</span><br>
 		<span class="muted">Blog Zenika, le 20 Décembre 2010</span><a href="http://blog.zenika.com/index.php?post/2010/12/03/Nuit-de-l-info-2010-%3A-Bravo-aux-vainqueurs2"> Lire l'article</a><br>
 	</div>
