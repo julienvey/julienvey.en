@@ -16,43 +16,39 @@ title: À propos - Julien Vey
 	<p class="lead">Pour me suivre</p>
 	
 <div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="http://twitter.com/julienvey"><img class="well" src="/assets/img/twitter.png" alt="Twitter"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Des tweets techniques, des tweets d'humeur ou d'opinion, ainsi que des annonces des différents évènements auxquels je participe</p>
-			<p class="pull-right"><a href="http://twitter.com/julienvey">Mon Twitter</a></p>
-		</div>
+	<div class="span1">
+		<a href="http://twitter.com/julienvey"><img class="well" src="/assets/img/twitter.png" alt="Twitter"></a>
 	</div>
-	<div class="span6">
-		<div class="span1">
-			<a href="https://github.com/julienvey"><img class="well" src="/assets/img/octocat.png" alt="Github"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Des projets open-source, des snippets de code et même les sources de site</p>
-			<p class="pull-right"><a href="https://github.com/julienvey">Mon Github</a></p>
-		</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Des tweets techniques, des tweets d'humeur ou d'opinion, ainsi que des annonces des différents évènements auxquels je participe</p>
+		<p class="lead"><a href="http://twitter.com/julienvey">Twitter</a></p>
+	</div>
+</div>	
+<div class="row">
+	<div class="span1">
+		<a href="https://github.com/julienvey"><img class="well" src="/assets/img/octocat.png" alt="Github"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Des projets open-source, des snippets de code et même les sources de site</p>
+		<p class="lead"><a href="https://github.com/julienvey">Github</a></p>
 	</div>
 </div>
 <div class="row">
-	<div class="span6">
-		<div class="span1">
-			<a href="https://plus.google.com/104319090218121337101"><img class="well" src="/assets/img/googleplus.png" alt="Google+"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>En tant que grand utilisateur de tous les produits Google, j'ai également mon profil Google+</p>
-			<p class="pull-right"><a href="https://plus.google.com/104319090218121337101">Ma page Google+</a></p>
-		</div>
+	<div class="span1">
+		<a href="https://plus.google.com/104319090218121337101"><img class="well" src="/assets/img/googleplus.png" alt="Google+"></a>
 	</div>
-	<div class="span6">
-		<div class="span1">   
-			<a href="http://fr.linkedin.com/in/julienvey"><img class="well" src="/assets/img/linkedin.png" alt="Lanyrd"></a>
-		</div>
-		<div class="span4" style="margin-left:60px">
-			<p>Certainement la version en ligne la plus complète de mes expériences</p>
-			<p class="pull-right"><a href="http://fr.linkedin.com/in/julienvey">Mon profil LinkedIn</a></p>
-		</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">En tant que grand utilisateur de tous les produits Google, j'ai également mon profil Google+</p>
+		<p class="lead"><a href="https://plus.google.com/104319090218121337101">Google+</a></p>
+	</div>
+</div>
+<div class="row">
+	<div class="span1">   
+		<a href="http://fr.linkedin.com/in/julienvey"><img class="well" src="/assets/img/linkedin.png" alt="Lanyrd"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Certainement la version en ligne la plus complète de mes expériences</p>
+		<p class="lead"><a href="http://fr.linkedin.com/in/julienvey">LinkedIn</a></p>
 	</div>
 </div>
 
