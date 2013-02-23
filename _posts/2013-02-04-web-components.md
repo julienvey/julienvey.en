@@ -93,3 +93,10 @@ interface HTMLTemplateElement : HTMLElement {
 - La page Google+ [Web Components](https://plus.google.com/103330502635338602217/posts)
 
 <strong>Et maintenant direction le [Shadow DOM](/2013/02/22/shadow-dom/) pour [le prochain article](/2013/02/22/shadow-dom/) ! </strong>
+
+####Les autres articles de la série sur les WebComponents : 
+
+* [Web Components - Les templates](/2013/02/18/web-components/)
+* [Web Components - Le Shadow DOM](/2013/02/22/shadow-dom/)
+* [Web Components - Custom Elements](/2013/02/25/custom-elements/)
+

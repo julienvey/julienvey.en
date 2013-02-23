@@ -69,6 +69,12 @@ Mais lorsque l'on souhaite simplement fournir un nouvel élément basé sur un �
 &lt;/element&gt;
 </pre>
 
-####Tout les articles de la série sur les WebComponents : 
+### C'est déjà fini ?
+Presque, dernier feature intéressante, observer les changements du DOM avec l'API Observer (Coming soon)
 
-* [Web Components, le nouvel espoir des développeurs Web - Les templates](http://julienvey.com/2013/02/18/web-components/)
+
+####Les autres articles de la série sur les WebComponents : 
+
+* [Web Components - Les templates](/2013/02/18/web-components/)
+* [Web Components - Le Shadow DOM](/2013/02/22/shadow-dom/)
+* [Web Components - Custom Elements](/2013/02/25/custom-elements/)
