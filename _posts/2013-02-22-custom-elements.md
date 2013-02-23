@@ -4,10 +4,10 @@ datefr: 25 Février 2013
 layout: post
 status: publish
 title: Web Components - Custom Elements
-img: /assets/img/posts/ghostbuster-150.png
+img: /assets/img/posts/brick.png
 tags: web-components html chrome dom custom-elements
 more : 100
-preview: TODO
+preview: Maintenant que nous connaissons les templates et que nous avons savons comment maîtriser le Shadow DOM, si on mélangeait les deux ? Enrichissons le DOM avec nos propres éléments
 ---
 
 Maintenant que nous connaissons [les templates](/2013/02/18/web-components/) et que nous avons savons comment maîtriser [le Shadow DOM](2013/02/22/shadow-dom/), si on mélangeait les deux ?
@@ -68,3 +68,7 @@ Mais lorsque l'on souhaite simplement fournir un nouvel élément basé sur un �
   ...
 &lt;/element&gt;
 </pre>
+
+####Tout les articles de la série sur les WebComponents : 
+
+* [Web Components, le nouvel espoir des développeurs Web - Les templates](http://julienvey.com/2013/02/18/web-components/)
