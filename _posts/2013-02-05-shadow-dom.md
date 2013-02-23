@@ -9,7 +9,7 @@ tags: web-components html chrome shadow-dom dom
 more : 100
 preview: Après avoir introduit les Web Components et la première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 ---
-Après avoir introduit les [Web Components](http://julienvey.com/2013/02/18/web-components/) et sa première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
+Après avoir introduit les [Web Components](/2013/02/18/web-components/) et sa première feature, les templates, je vais maintenant vous parler du Shadom DOM, qui va nous garantir l'encapsulation dans nos pages html.
 
 ###Le shadow DOM... mais il est où ?
 
@@ -206,7 +206,7 @@ Tout simplement en utilisant le sélecteur `@host` dans notre feuille de style
 
 ### La suite, la suite !
 
-Après avoir introduit dans un premier temps [les templates](http://julienvey.com/2013/02/18/web-components/), nous venons de voir le Shadow DOM, deuxième fonctionnalité des Web Components. 
+Après avoir introduit dans un premier temps [les templates](/2013/02/18/web-components/), nous venons de voir le Shadow DOM, deuxième fonctionnalité des Web Components. 
 
 Mais je vous l'accorde, ces deux éléments pris séparément ne semblent pas si révolutionnaires. 
 
@@ -216,4 +216,4 @@ C'est pourquoi le prochain article va parler des... éléments customs. Comment 
 
 ####Les autres articles de la série sur les WebComponents : 
 
-* [Web Components, le nouvel espoir des développeurs Web - Les templates](http://julienvey.com/2013/02/18/web-components/)
+* [Web Components, le nouvel espoir des développeurs Web - Les templates](/2013/02/18/web-components/)

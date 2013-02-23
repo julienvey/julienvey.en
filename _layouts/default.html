@@ -17,16 +17,19 @@
  <script type="text/javascript" src="/js/bootstrap.js"></script>
  <script type="text/javascript" src="/js/prettify/prettify.js"></script>
 
- <script type="text/javascript">
- var _gaq = _gaq || [];
- _gaq.push(['_setAccount', 'UA-9100144-2']);
- _gaq.push(['_trackPageview']);
+<script type="text/javascript">
 
- (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9100144-2']);
+  _gaq.push(['_setDomainName', 'julienvey.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
 </head>
@@ -37,7 +40,6 @@
       <div class="container">
         <a class="brand" href="/">JulienVey.com</a>
         <ul class="nav pull-right">
-          <li {% if page.url == '/blog.html' %}class="active"{% endif %} ><a href="/blog.html"><i class="icon-bullhorn"></i> Blog</a></li>
           <li {% if page.url == '/publications.html' %}class="active"{% endif %} ><a href="/publications.html"><i class="icon-pencil"></i> Publications</a></li>
           <li {% if page.url == '/cv.html' %}class="active"{% endif %} ><a href="/cv.html"><i class="icon-file"></i> CV</a></li>
           <li {% if page.url == '/apropos.html' %}class="active"{% endif %} ><a href="/apropos.html"><i class="icon-user"></i> À propos</a></li>
