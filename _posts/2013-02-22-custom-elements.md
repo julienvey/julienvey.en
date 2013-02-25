@@ -55,7 +55,11 @@ Pour l'utiliser dans sa propre page html, il faut maintenant importer ce fichier
 &lt;x-helloworld&gt;Julien&lt;/x-helloworld&gt;
 </pre>
 
-Ce composant va donc nous afficher <strong>Hello Julien ! I'm a custom element !</strong>. Simple mais on imagine facilement toutes les possibilités que cela nous ouvre
+Ce composant va donc nous afficher ...
+
+<strong>Hello Julien ! I'm a custom element !</strong>
+
+Simple mais on imagine facilement toutes les possibilités que cela nous ouvre
 
 ### L'héritage
 
@@ -70,8 +74,10 @@ Mais lorsque l'on souhaite simplement fournir un nouvel élément basé sur un �
 </pre>
 
 ### C'est déjà fini ?
-Presque, dernier feature intéressante, observer les changements du DOM avec l'API Observer (Coming soon)
 
+Et oui, un article court mais qui a selon moi le mérite de mettre en valeur les deux précédents.
+
+Mais il nous reste encore une dernière feature intéressante à voir. Comment observer les changements du DOM avec l'API Observer (Coming soon)
 
 ####Les autres articles de la série sur les WebComponents : 
 
