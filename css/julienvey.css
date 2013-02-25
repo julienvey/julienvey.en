@@ -11,7 +11,7 @@
 	text-align: justify;
 }
 
-.post p {
+.post p, .post li {
   line-height: 1.5em;
   font-size: 16px;
 }
