@@ -99,4 +99,5 @@ interface HTMLTemplateElement : HTMLElement {
 * [Web Components - Les templates](/2013/02/18/web-components/)
 * [Web Components - Le Shadow DOM](/2013/02/22/shadow-dom/)
 * [Web Components - Custom Elements](/2013/02/26/custom-elements/)
+* [Web Components - Observer les changements du DOM](/2013/02/28/dom-observe/)
 

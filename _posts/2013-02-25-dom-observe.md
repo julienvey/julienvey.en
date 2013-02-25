@@ -79,7 +79,7 @@ function observeChanges(changes) {
   console.log('== Callback ==');
   changes.forEach(function(change) {
     console.log('Ce qui a changé', change.name);
-    console.log('La nature du changment', change.type);
+    console.log('La nature du changement', change.type);
     console.log('L''ancienne valeur', change.oldValue );
     console.log('La nouvelle valeur', change.object[change.name]);
   });
