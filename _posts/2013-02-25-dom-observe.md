@@ -4,7 +4,7 @@ datefr: 28 Février 2013
 layout: post
 status: publish
 title: Web Components - Observer les changements du DOM
-img: /assets/img/posts/brick.png
+img: /assets/img/posts/longuevue.jpg
 tags: web-components html chrome dom observe mutations angularjs databinding
 more : 100
 preview: Cette dernière partie de la spécification des web components est sûrement celle qui va avoir le plus d'impact sur les performances de nos applications. Contrairement aux templates, shadow dom et éléments customs qui sont plus orientés pour améliorer la productivité des développeurs. Nous allons donc voir comment "observer notre application", observer le DOM ainsi que le model.
