@@ -210,7 +210,7 @@ Après avoir introduit dans un premier temps [les templates](/2013/02/18/web-com
 
 Mais je vous l'accorde, ces deux éléments pris séparément ne semblent pas si révolutionnaires. 
 
-C'est pourquoi le prochain article va parler des... [éléments customs](/2013/02/25/custom-elements/). Comment utiliser les templates et le Shadow DOM pour enrichir la liste des éléments HTML avec ses propres éléments.
+C'est pourquoi le prochain article va parler des... [éléments customs](/2013/02/26/custom-elements/). Comment utiliser les templates et le Shadow DOM pour enrichir la liste des éléments HTML avec ses propres éléments.
 
 <br>
 
@@ -218,4 +218,4 @@ C'est pourquoi le prochain article va parler des... [éléments customs](/2013/0
 
 * [Web Components - Les templates](/2013/02/18/web-components/)
 * [Web Components - Le Shadow DOM](/2013/02/22/shadow-dom/)
-* [Web Components - Custom Elements](/2013/02/25/custom-elements/)
+* [Web Components - Custom Elements](/2013/02/26/custom-elements/)

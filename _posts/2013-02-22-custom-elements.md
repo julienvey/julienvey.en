@@ -1,6 +1,6 @@
 ---
-date: '2013-02-25 09:00:00'
-datefr: 25 Février 2013
+date: '2013-02-26 09:00:00'
+datefr: 26 Février 2013
 layout: post
 status: publish
 title: Web Components - Custom Elements
@@ -83,4 +83,4 @@ Mais il nous reste encore une dernière feature intéressante à voir. Comment o
 
 * [Web Components - Les templates](/2013/02/18/web-components/)
 * [Web Components - Le Shadow DOM](/2013/02/22/shadow-dom/)
-* [Web Components - Custom Elements](/2013/02/25/custom-elements/)
+* [Web Components - Custom Elements](/2013/02/26/custom-elements/)
