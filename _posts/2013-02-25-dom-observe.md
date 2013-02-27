@@ -7,10 +7,10 @@ title: Web Components - Observer les changements du DOM
 img: /assets/img/posts/longuevue.jpg
 tags: web-components html chrome dom observe mutations angularjs databinding
 more : 100
-preview: Cette dernière partie de la spécification des web components est sûrement celle qui va avoir le plus d'impact sur les performances de nos applications. Contrairement aux templates, shadow dom et éléments customs qui sont plus orientés pour améliorer la productivité des développeurs. Nous allons donc voir comment "observer notre application", observer le DOM ainsi que le model.
+preview: Cette dernière partie de la spécification des web components est sûrement celle qui va avoir le plus d'impact sur les performances de nos applications, contrairement aux templates, shadow dom et éléments customs qui sont plus orientés pour améliorer la productivité des développeurs. Nous allons donc voir comment "observer notre application", observer le DOM ainsi que le modèle.
 ---
 
-Cette dernière partie de la spécification des web components est sûrement celle qui va avoir le plus d'impact sur les performances de nos applications. Contrairement aux templates, shadow dom et éléments customs qui sont certainement plus orientés pour améliorer la productivité des développeurs. Nous allons donc voir comment "observer notre application", observer le DOM ainsi que le model.
+Cette dernière partie de la spécification des web components est sûrement celle qui va avoir le plus d'impact sur les performances de nos applications, contrairement aux templates, shadow dom et éléments customs qui sont certainement plus orientés pour améliorer la productivité des développeurs. Nous allons donc voir comment "observer notre application", observer le DOM ainsi que le modèle.
 
 ### On fait comment de nos jours ?
 
@@ -22,17 +22,17 @@ document.addEventListener('DOMNodeInserted', function(e) {
 }, false);
 </pre>
 
-Cette façon de faire n'est pas performante. D'une part à cause de la propagation des évènements et de la nature asynchrone de cette méthode. Ensuite car ces évènements sont envoyés beaucoup trop souvent, à chaque changement, sans possibilité de grouper ceux-ci.
+Cette façon de faire n'est pas performante. D'une part à cause de la propagation des évènements et de la nature asynchrone de cette méthode. Ensuite car ces évènements sont envoyés beaucoup trop souvent, à chaque changement, sans possibilité de les grouper.
 
 ### Demain, avec les Web Components...
 
 Demain, ce sera mieux, évidemment !
 
-La spécification Web Components nous apporte les <strong>Mutation Observers</strong> qui vont nous permettre d'observer les changements du DOM, sans avoir recours à la programmation évènementiel. Concrètement, qu'est-ce que ça change ?
+La spécification Web Components nous apporte les <strong>Mutation Observers</strong> qui vont nous permettre d'observer les changements du DOM, sans avoir recours à la programmation événementiel. Concrètement, qu'est-ce que ça change ?
 
 Les Mutations Observers ne sont notifiés qu'à la fin des modifications du DOM, lorsqu'il y en a plusieurs simultanément par exemple. Ce qui implique que ce que l'on va recevoir une liste de changements et non plus un seul. 
 
-On crée tout d'abord l'observer, la fonction qui va être notifiée des changements et effectuera les actions voulues.
+On crée tout d'abord l'observer, avec la fonction qui va être notifiée des changements et effectuera les actions voulues.
 
 <pre class="prettyprint" data-lang="javascript">
 var observer = new MutationObserver(function(mutations, observer) {
@@ -47,7 +47,7 @@ var observer = new MutationObserver(function(mutations, observer) {
 Sur cet objet, on va ensuite appeler la méthode observe
 
 * Le premier paramètre est l'élément du DOM que l'on souhaite observer.
-* Le second paramètre est un object contenant un ensemble de propriétés pour l'observation
+* Le second paramètre est un objet contenant un ensemble de propriétés pour l'observation
 
 <pre class="prettyprint" data-lang="javascript">
 observer.observe(el, {
@@ -72,7 +72,7 @@ Tout comme pour l'observation du DOM, une fonction va être notifiée des change
 * `name` Qu'est-ce qui a changé ? 
 * `type` Quelle est la nature du changement ?
 * `oldValue` l'ancienne valeur de ce qui a changé 
-* `object` l'object observé dans son état courant
+* `object` l'objet observé dans son état courant
 
 <pre class="prettyprint" data-lang="javascript">
 function observeChanges(changes) {
