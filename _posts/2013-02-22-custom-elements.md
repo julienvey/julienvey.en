@@ -77,7 +77,7 @@ Mais lorsque l'on souhaite simplement fournir un nouvel élément basé sur un �
 
 Et oui, un article court mais qui a selon moi le mérite de mettre en valeur les deux précédents.
 
-Mais il nous reste encore une dernière feature intéressante à voir. Comment observer les changements du DOM avec l'API Observer (Coming soon)
+Mais il nous reste encore une dernière feature intéressante à voir. [Comment observer les changements du DOM](/2013/02/28/dom-observe/) avec l'API Observer.
 
 ####Les autres articles de la série sur les WebComponents : 
 
