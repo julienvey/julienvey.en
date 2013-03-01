@@ -10,7 +10,7 @@ more : 100
 preview: Maintenant que nous connaissons les templates et que nous avons savons comment maîtriser le Shadow DOM, si on mélangeait les deux ? Enrichissons le DOM avec nos propres éléments
 ---
 
-Maintenant que nous connaissons [les templates](/2013/02/18/web-components/) et que nous avons savons comment maîtriser [le Shadow DOM](2013/02/22/shadow-dom/), si on mélangeait les deux ?
+Maintenant que nous connaissons [les templates](/2013/02/18/web-components/) et que nous avons savons comment maîtriser [le Shadow DOM](/2013/02/22/shadow-dom/), si on mélangeait les deux ?
 
 ### Enrichir le DOM avec ses propres éléments
 
