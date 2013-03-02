@@ -39,7 +39,7 @@ title: À propos - Julien Vey
 	</div>
 	<div class="span9" style="margin-left:60px">
 		<p class="lead">En tant que grand utilisateur de tous les produits Google, j'ai également mon profil Google+</p>
-		<p class="lead"><a href="https://plus.google.com/104319090218121337101">Google+</a></p>
+		<p class="lead"><a href="https://plus.google.com/104319090218121337101?rel=author">Google+</a></p>
 	</div>
 </div>
 <div class="row">
