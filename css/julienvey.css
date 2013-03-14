@@ -12,8 +12,8 @@
 }
 
 .post p, .post li {
-  line-height: 1.5em;
-  font-size: 16px;
+  font: 18px 'Droid Sans', Lato, helvetica, arial, clean, sans-serif;
+  line-height: 1.8em;
 }
 
 /* Footer
