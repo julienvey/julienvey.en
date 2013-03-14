@@ -11,8 +11,12 @@
 	text-align: justify;
 }
 
+body {
+  font-family :'Droid Sans', Lato, helvetica, arial, clean, sans-serif;
+}
+
 .post p, .post li {
-  font: 18px 'Droid Sans', Lato, helvetica, arial, clean, sans-serif;
+  font-size: 18px;
   line-height: 1.8em;
 }
 
