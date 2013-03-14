@@ -20,6 +20,43 @@ body {
   font-size: 18px;
   line-height: 1.8em;
 }
+/* Header
+-------------------------------------------------- */
+
+.banner {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.banner .nav {
+  text-transform: uppercase;
+}
+
+.banner .navbar-inner {
+  border: 0 none;
+  background: rgba(255,255,255,0.95);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.navbar .nav .activ a, .navbar .nav .activ a:focus {
+  color: black;
+  background: none; 
+  -webkit-box-shadow: 0 1px rgba(0,0,0,0);
+  -moz-box-shadow: 0 1px rgba(0,0,0,0);
+  box-shadow: 0 1px rgba(0,0,0,0);
+}
+
+.navbar .nav a, .navbar .nav a:focus {
+  text-shadow: none;
+  color: #afafaf;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
 
 /* Footer
 -------------------------------------------------- */
