@@ -29,8 +29,11 @@ body {
 
 .banner {
   font-size: 13px;
-  font-weight: bold;
   letter-spacing: 0.2em;
+}
+
+.brand {
+  font-weight: 400 !important;
 }
 
 .banner .nav {
