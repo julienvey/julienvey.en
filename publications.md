@@ -14,8 +14,8 @@ title: Publications - Julien Vey
 	<div class="span2"><img class="well" src="./assets/img/dartlang-60.png" alt="Dartlang"></div>
 	<div class="span10">
 		<span class="lead">Dart, un langage moderne pour le web</span><br>
-		<span class="muted">Nantes JUG, le 16 Janvier 2013</span><a href="/presentations/dart-nantes-jug/"> Voir la présentation</a><br>
-		<span class="muted"> Code d'Armor à Lannion, le 13 Novembre 2012</span><a href="/presentations/dart-code-armor/"> Voir la présentation</a><br>	
+		<span class="muted">Nantes JUG, le 16 Janvier 2013</span>&nbsp;<a href="/presentations/dart-nantes-jug/">Voir la présentation</a><br>
+		<span class="muted">Code d'Armor à Lannion, le 13 Novembre 2012</span>&nbsp;<a href="/presentations/dart-code-armor/">Voir la présentation HTML5</a>&nbsp;<a href="https://speakerdeck.com/julienvey/dart-un-langage-moderne-pour-le-web#/">ou SpeakerDeck</a><br>	
 	</div>
 </div>
 <h1>Articles techniques</h1>
