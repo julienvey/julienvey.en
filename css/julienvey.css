@@ -2,6 +2,10 @@
 	padding-bottom: 20px;
 }
 
+h3 a:hover {
+  text-decoration: none;
+}
+
 .faceImage {
 	padding-right: 40px;
 	
