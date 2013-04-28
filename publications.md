@@ -13,12 +13,16 @@ title: Publications - Julien Vey
 <div class="row">
 	<div class="span2"><img class="well" src="./assets/img/webcomponents-60.png" alt="Web Components"></div>
 	<div class="span10">
+		<span class="lead">Web Components, l'avenir des développeurs web</span><br>
+		<span class="muted">Mix-IT Lyon 2013, le 25 avril 2013</span>&nbsp;<a href="https://speakerdeck.com/julienvey/web-components-lavenir-des-developpeurs-web">Voir la présentation</a><br>
+		<br>
 		<span class="lead">L'avenir passe par les Web Components, la preuve par dix !</span><br>
-		<span class="muted">Human Talks Paris, le 9 avril 2013</span>&nbsp;<a href="https://speakerdeck.com/julienvey/lavenir-passe-par-les-web-components-la-preuve-par-dix">Voir la présentation (SpeakerDeck)</a><br>	
+		<span class="muted">Human Talks Paris, le 9 avril 2013</span>&nbsp;<a href="https://speakerdeck.com/julienvey/lavenir-passe-par-les-web-components-la-preuve-par-dix">Voir la présentation</a><br>
 	</div>
 </div>
 
 
+<br>
 <br>
 
 <div class="row">
