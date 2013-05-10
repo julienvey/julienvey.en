@@ -3,22 +3,60 @@ layout: default
 title: Julien Vey
 ---
 
-<div class="hero-unit">
+<!-- <div class="hero-unit">
 	<h1>Julien Vey</h1>
 	<p>Développeur logiciel, je m'intéresse à tout ce qui tourne autour de l'écosystème Java et du Web. Je suis actuellement employé chez <a href="http://www.zenika.com">Zenika</a> à Paris</p>
 	
+</div> -->
+
+<div class="justify">
+	<img src="images/face160.png" class="pull-left faceImage"/>
+
+	<p class="lead">I work at <a href="http://wwww.zenika.com">Zenika</a> in Paris</p>
+	<p class="lead">I am <strong>Developer</strong>, Java & Web over all. My main skills: Java, GWT, HTML5, Spring, Hibernate. Some BPM and OSGi and my interests of the moment: Dart. For more details, see <a href="/cv.html">my CV</a></p>
+	<p class="lead">I am <strong>Trainer</strong>: GWT, Advanced GWT, Google App Engine, OSGi, Git... All this in <a href="http://zenika.com/Formation/">Zenika</a></p>
+	<p class="lead">I write <strong>Blog</strong> articles, on technical issues or events, whether on <a href="/index.html">my blog (in French)</a> or on <a href="http://blog.zenika.com/">Zenika's blog</a></p> 
+	<p class="lead">And finally I give <strong>talks</strong> and workshops, both internally and in user groups</p>
+	<p class="lead">I am interested in many subjects. And as I have the opportunity to live in Paris, you can easily find me int the JUGs, GDG, or other workshops done by the Parisian community</p> 
+	<p class="lead">To follow me</p>
+	
+<div class="row">
+	<div class="span1">
+		<a href="http://twitter.com/julienvey"><img class="well" src="/assets/img/twitter.png" alt="Twitter"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Technical tweets, mood or opinion tweets, as well as announcements of various events in which I participate</p>
+		<p class="lead"><a href="http://twitter.com/julienvey">Twitter</a></p>
+	</div>
+</div>	
+<div class="row">
+	<div class="span1">
+		<a href="https://github.com/julienvey"><img class="well" src="/assets/img/octocat.png" alt="Github"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Open-source projects, code snippets and even this website sources</p>
+		<p class="lead"><a href="https://github.com/julienvey">Github</a></p>
+	</div>
+</div>
+<div class="row">
+	<div class="span1">
+		<a href="https://plus.google.com/104319090218121337101?rel=author"><img class="well" src="/assets/img/googleplus.png" alt="Google+"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">As a big user of Google products, I also have my Google+ profile</p>
+		<p class="lead"><a href="https://plus.google.com/104319090218121337101?rel=author">Google+</a></p>
+	</div>
+</div>
+<div class="row">
+	<div class="span1">   
+		<a href="http://fr.linkedin.com/in/julienvey"><img class="well" src="/assets/img/linkedin.png" alt="Lanyrd"></a>
+	</div>
+	<div class="span9" style="margin-left:60px">
+		<p class="lead">Certainly the most complete online version of my experiences</p>
+		<p class="lead"><a href="http://fr.linkedin.com/in/julienvey">LinkedIn</a></p>
+	</div>
 </div>
 
-{% for post in site.posts %}
-<div class="row">
-	<div class="span3">
-		<a href="{{ post.url }}"><img class="well" src="{{ post.img }}"></a>
-	</div>
-	<div class="span9">
-		<h3 style="margin-bottom: 0; margin-top:0"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p class="muted" style="margin-bottom:10px;">Publié le <strong>{{ post.datefr }}</strong></p>
-		<span style="text-align:justify" class="post"><p>{{ post.preview }} ... <a href="{{ post.url }}">Lire la suite</a></p></span>
-	</div>
+
 </div>
-<hr>
-{% endfor %}
+
